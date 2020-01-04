@@ -15,7 +15,7 @@ import pandas as pd
 from scipy.stats import kendalltau
 
 from ...errors import UnreachableError
-from ..dtypes import NUMERICAL_DTYPES, is_categorical, is_numerical
+from ..dtypes import NUMERICAL_DTYPES
 from ..intermediate import Intermediate
 from ..utils import to_dask
 
