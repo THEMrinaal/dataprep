@@ -79,6 +79,6 @@ def plot_correlation(
 
     intermediate = compute_correlation(df, x=x, y=y, value_range=value_range, k=k)
     figure = render_correlation(intermediate)
-    if show_plot:
+    if show_plot and intermediate.visual_type is not None:
         show(figure)
     return figure
