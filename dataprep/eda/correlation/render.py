@@ -273,7 +273,7 @@ def render_correlation(
         The bokeh Figure instance.
     """
     if itmdt.visual_type is None:
-        visual_elem = figure()
+        visual_elem = Figure()
     elif itmdt.visual_type == "correlation_heatmaps":
         visual_elem = render_correlation_heatmaps(
             itmdt, plot_width, plot_height, palette or BIPALETTE
